@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div class="container">
+    <h1 id="title">🎉 Happy New Year 2026 🎉</h1>
+    <p id="message">Countdown to a New Beginning...</p>
+
+    <div id="countdown">
+        <div><span id="days">00</span>Days</div>
+        <div><span id="hours">00</span>Hours</div>
+        <div><span id="minutes">00</span>Minutes</div>
+        <div><span id="seconds">00</span>Seconds</div>
+    </div>
+
+    <button onclick="playMusic()">🎶 Play Music</button>
+
+    <!-- Special Message Box -->
+    <div id="special-box" class="hidden">
+        <h2>💌 A Special Message</h2>
+        <p>
+            May this New Year 2026 bring endless opportunities,
+            happiness, and success into your life.
+            Keep believing in yourself and never stop dreaming.
+        </p>
+        <h3>– From Aman</h3>
+    </div>
+</div>
+
+<audio id="music" src="music.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

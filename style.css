@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #020024, #090979, #000);
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    text-align: center;
+    padding: 10px;
+}
+
+#title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    animation: glow 2s infinite alternate;
+}
+
+#message {
+    margin: 15px 0 30px;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#countdown div {
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 12px;
+    min-width: 90px;
+}
+
+#countdown span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: gold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: orange;
+}
+
+/* Special Message Box */
+#special-box {
+    margin: 40px auto 0;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,215,0,0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+#special-box h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+#special-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#special-box h3 {
+    color: #ffdd57;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px gold; }
+    to { text-shadow: 0 0 30px red; }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
