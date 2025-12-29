@@ -1,5 +1,5 @@
 // 🎯 COUNTDOWN TIMER
-const newYearTime = new Date("January 01, 2026 00:00:00").getTime();
+const newYearTime = new Date("December 29, 2025 09:34:00").getTime();
 let celebrated = false;
 
 const daysEl = document.getElementById("days");
@@ -98,3 +98,4 @@ function launchCelebration() {
 }
 
 animate();
+
